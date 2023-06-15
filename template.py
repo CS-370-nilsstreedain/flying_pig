@@ -60,7 +60,7 @@ plane_data = convert_to_tensor("plane.jpg")
 # --------------------------------------------------------------------------------
 
 # TODO: your code here
-data_for_fooling = pig_data
+data_for_fooling = plane_data
 
 # Do not edit: save the resulting image
 save_image(data_for_fooling, 'flying_pig.jpg')
