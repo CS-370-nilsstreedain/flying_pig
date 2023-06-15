@@ -90,8 +90,8 @@ for _ in tqdm(range(20), desc=' : [run attack]'):
     # TODO: your code here
     # (Tip: modify the loss function by choosing the correct class number; 
     #       341 is hog and 404 is airliner; - means getting far, + means getting close to the class)
-    loss = (-nn.CrossEntropyLoss()(pig_pred, torch.LongTensor([0])) \
-            + nn.CrossEntropyLoss()(pig_pred, torch.LongTensor([0])))
+    loss = (-nn.CrossEntropyLoss()(pig_pred, torch.LongTensor([341])) \
+            + nn.CrossEntropyLoss()(pig_pred, torch.LongTensor([404])))
 
     # update the pig
     opt.zero_grad()
